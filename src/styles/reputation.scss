@@ -1,0 +1,94 @@
+section.reputation {
+	background-image: url("../images/recentyl-lanuched-img.png");
+	padding: 60px 0;
+
+	.content.left-side {
+		margin-top: 40px;
+
+		.wrapper {
+			width: 85%;
+		}
+	}
+
+	.reviews.right-side {
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+		cursor: grab;
+
+		.owl-carousel-reviews {
+			overflow: hidden;
+
+			.owl-stage-outer .owl-stage {
+				display: flex;
+
+				.item {
+					padding: 20px 30px;
+					color: #333;
+
+					.reviewer {
+						display: flex;
+						justify-content: space-between;
+						align-items: flex-end;
+						margin-bottom: 50px;
+
+						.reviewer__info {
+							width: 50%;
+							padding: 10px 0 0 10px;
+
+							.reviewer__info-name {
+								color: rgb(205, 170, 114);
+							}
+
+							.reviewer__info-social:hover {
+								color: #333;
+							}
+						}
+					}
+				}
+			}
+
+			.owl-nav {
+				display: none;
+			}
+
+			.owl-dots {
+				margin-top: 50px;
+
+				button {
+					cursor: pointer;
+
+					&.active span {
+						background: rgb(205, 170, 114);
+						box-shadow: 0 0 8px 0 rgb(205, 170, 114);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1280px) {
+	section.reputation .reviews.right-side {
+		margin-top: 40px;
+	}
+}
+
+@media (max-width: 600px) {
+	section.reputation {
+		.left-side .wrapper {
+			width: 100% !important;
+		}
+
+		.reviews.right-side {
+			margin-top: 40px;
+
+			.reviewer {
+				flex-direction: column;
+				align-items: flex-start !important;
+
+				.reviewer__info {
+					width: 100% !important;
+				}
+			}
+		}
+	}
+}

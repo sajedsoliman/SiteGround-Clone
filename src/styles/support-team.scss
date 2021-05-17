@@ -1,0 +1,50 @@
+.support-team {
+    min-height: 560px;
+    background-image: url("../images/support-team.jpg") /* no-repeat center fixed */;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px 0 40px;
+
+    .upper-info {
+        color: white;
+        width: 75%;
+        margin: auto;
+        margin-bottom: 70px;
+
+        .MuiTypography-body1 {
+            font-size: 19px;
+        }
+    }
+
+    .features {
+        
+        .feature {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #fff;
+
+            .feature__img {
+                width: 96px;
+                height: 90px;
+                margin: 0 auto 15px;
+
+                svg {
+                    fill: rgb(205, 170, 114);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .support-team {
+        .upper-info {
+            width: 100%;
+
+            .MuiTypography-body1 {
+                font-size: 16px;
+            }
+        }
+    }   
+}

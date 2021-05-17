@@ -1,0 +1,33 @@
+@media (max-width: 960px) {
+    // landing page
+    .landing-page {
+
+        .content {
+            margin: 20px 0 !important;
+
+            /* img {
+
+            } */
+
+            .info {
+            
+                h2 {
+                    font-size: 23px;
+                    margin-bottom: 25px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 959px) and (max-width: 1180px) {
+    .landing-page {
+
+        .content {
+
+            img {
+                display: none;
+            }
+        }
+    }
+}

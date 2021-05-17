@@ -1,0 +1,57 @@
+.recently-launched {
+  background-image: url("../images/recentyl-lanuched-img.png");
+}
+.recently-launched .container {
+  position: relative;
+  border-top: 0.5px solid #f47b44;
+  padding-bottom: 80px;
+}
+.recently-launched .container .upper-title {
+  position: absolute;
+  top: -12.5px;
+  left: 50%;
+  background: #f47b44;
+  color: #fff;
+  font-size: 14px;
+  padding: 1px 8px;
+  transform: translateX(-50%);
+  border-radius: 7px;
+  text-transform: uppercase;
+}
+.recently-launched .container .inner-content {
+  padding-top: 80px;
+}
+.recently-launched .container .inner-content .left-side {
+  overflow-x: hidden;
+}
+.recently-launched .container .inner-content .left-side .svg-book-img {
+  width: 250px;
+}
+.recently-launched .container .inner-content .right-side.techniques {
+  margin-top: 45px;
+  overflow-x: hidden;
+}
+.recently-launched .container .inner-content .right-side.techniques .technique {
+  margin-bottom: 45px;
+}
+.recently-launched .container .inner-content .right-side.techniques .technique .svg-img {
+  display: flex;
+  justify-content: center;
+}
+.recently-launched .container .inner-content .right-side.techniques .technique .svg-img svg {
+  width: 100%;
+  max-width: 100px;
+}
+.recently-launched .container .inner-content .right-side.techniques .technique .content .technique-title {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 400px) {
+  .right-side.techniques .technique .svg-img svg {
+    width: 100%;
+    margin-right: 10px;
+  }
+  .right-side.techniques .content .technique-title {
+    font-size: 20px;
+  }
+}

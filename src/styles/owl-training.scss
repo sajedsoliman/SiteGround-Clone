@@ -1,0 +1,69 @@
+.training {
+	height: 700px;
+	background-color: #34495e;
+	padding: 70px 0;
+
+	.carousel-cards-wrapper {
+		width: 45%;
+
+		.owl-carousel-cards {
+			width: 60%;
+			margin: auto;
+			display: flex;
+			align-items: center;
+
+			.owl-stage-outer {
+				overflow-x: hidden;
+			}
+
+			.owl-stage {
+				display: flex;
+			}
+
+			.card {
+				text-align: center;
+				padding: 20px;
+				cursor: grab;
+
+				& *,
+				*:hover {
+					cursor: grab;
+				}
+
+				.card__box-title {
+					margin: 8px 0 2px;
+				}
+
+				.card__box-img {
+					border-radius: 50%;
+					box-shadow: 0 0 5px 8px #ccc;
+				}
+			}
+		}
+	}
+}
+
+.training .owl-nav {
+	display: none !important;
+}
+
+.training .carousel-cards-wrapper .owl-carousel-cards .owl-dots {
+	.owl-dot span {
+		background: white;
+	}
+	.owl-dot.active span {
+		background: #34495e;
+		filter: brightness(180%);
+		box-shadow: 0 1px 6px 0 #34495e;
+	}
+}
+
+@media (max-width: 960px) {
+	.training .carousel-cards-wrapper {
+		width: 100%;
+
+		.owl-carousel-cards {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,54 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  border: none;
+  background: none;
+}
+button:hover, button:focus {
+  outline: none;
+}
+
+input {
+  border: none;
+  background: none;
+}
+input:hover, input:focus {
+  outline: none;
+}
+
+textarea {
+  border: none;
+  background: none;
+}
+textarea:hover, textarea:focus {
+  outline: none;
+}

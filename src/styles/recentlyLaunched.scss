@@ -1,0 +1,70 @@
+.recently-launched {
+	background-image: url("../images/recentyl-lanuched-img.png");
+
+	.container {
+		position: relative;
+		border-top: 0.5px solid rgb(244, 123, 68);
+		padding-bottom: 80px;
+
+		.upper-title {
+			position: absolute;
+			top: -12.5px;
+			left: 50%;
+			background: rgb(244, 123, 68);
+			color: #fff;
+			font-size: 14px;
+			padding: 1px 8px;
+			transform: translateX(-50%);
+			border-radius: 7px;
+			text-transform: uppercase;
+		}
+
+		.inner-content {
+			padding-top: 80px;
+
+			.left-side {
+				overflow-x: hidden;
+
+				.svg-book-img {
+					width: 250px;
+				}
+			}
+
+			.right-side.techniques {
+				margin-top: 45px;
+				overflow-x: hidden;
+
+				.technique {
+					margin-bottom: 45px;
+
+					.svg-img {
+						display: flex;
+						justify-content: center;
+
+						svg {
+							width: 100%;
+							max-width: 100px;
+						}
+					}
+
+					.content .technique-title {
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.right-side.techniques {
+		.technique .svg-img svg {
+			width: 100%;
+			margin-right: 10px;
+		}
+
+		.content .technique-title {
+			font-size: 20px;
+		}
+	}
+}

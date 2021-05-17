@@ -1,0 +1,58 @@
+.tools-services {
+  padding: 90px 0;
+}
+.tools-services .info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.tools-services .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(400px, auto) minmax(400px, auto);
+  grid-gap: 30px;
+}
+.tools-services .cards .card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 7px 7px 4px 4px;
+}
+.tools-services .cards .card.ws-building {
+  background-image: url("https://us.123rf.com/450wm/aga7ta/aga7ta1507/aga7ta150700150/42575147-detail-of-green-crepe-paper-texture-background.jpg?ver=6");
+}
+.tools-services .cards .card.wt-transfter {
+  background-image: url("https://us.123rf.com/450wm/lesichkadesign/lesichkadesign1802/lesichkadesign180200047/94963262-brightly-orange-crumpled-paper-texture-color-crepe-paper-background-texture-background-of-wavy-corru.jpg?ver=6");
+}
+.tools-services .cards .card.managed-wp {
+  background-image: url("https://img.freepik.com/free-photo/blue-crepe-paper-background_87555-1179.jpg?size=626&ext=jpg");
+}
+.tools-services .cards .card.collaboration-tools {
+  background-image: url("https://media.gettyimages.com/vectors/dark-purple-coloured-crepe-paper-textured-background-vector-id1246087526"), url("https://media.gettyimages.com/vectors/dark-purple-coloured-crepe-paper-textured-background-vector-id1246087526");
+  background-position: top 150px left, top;
+}
+.tools-services .cards .card .wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+  border-radius: inherit;
+  padding: 50px;
+}
+.tools-services .cards .card .wrapper svg {
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  right: 20px;
+  bottom: 10px;
+}
+
+@media (max-width: 960px) {
+  .tools-services .cards {
+    grid-template-columns: 1fr;
+  }
+  .tools-services .cards .card .wrapper {
+    padding: 30px;
+  }
+  .tools-services .cards .card .wrapper .makeStyles-cardtitle-21 {
+    font-size: 30px;
+  }
+}

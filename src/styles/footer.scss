@@ -1,0 +1,210 @@
+// mini-footer
+section.mini-footer-wp {
+	position: relative;
+	height: 380px;
+	background-image: url("../images/blue-parttern.jpg");
+	overflow: hidden;
+	filter: brightness(85%);
+
+	.section-svg-cover {
+		position: absolute;
+		left: 53%;
+		top: 53%;
+		transform: translate(-50%, -50%);
+		width: 1920px;
+		height: 100%;
+
+		svg path,
+		svg circle,
+		svg polygon {
+			fill: rgb(34 109 122);
+		}
+	}
+
+	.wp-svg-img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 12.5%;
+		transform: translate(-50%, -50%);
+	}
+
+	.content {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		width: 80%;
+		margin: auto;
+		padding: 40px 0;
+		text-align: center;
+		color: #2f90a7;
+		filter: brightness(180%) blur(0.45px);
+
+		.title {
+			margin-bottom: 15px;
+		}
+
+		.info {
+			line-height: 1.5;
+		}
+	}
+}
+// mini footer media querires
+@media (max-width: 960px) {
+	section.mini-footer-wp .wp-svg-img {
+		width: 25%;
+	}
+
+	section.mini-footer-wp .section-svg-cover {
+		left: 58%;
+	}
+
+	section.mini-footer-wp {
+		.content {
+			width: 90% !important;
+
+			.title {
+				font-size: 30px;
+				margin-bottom: 17px;
+			}
+
+			.info {
+				font-size: 20px;
+			}
+		}
+	}
+}
+// mini footer media querires 2
+@media (max-width: 600px) {
+	section.mini-footer-wp {
+		.content {
+			.title {
+				font-size: 25px;
+				margin-bottom: 23px;
+			}
+
+			.info {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+// mini footer media querires 3
+@media (max-width: 480px) {
+	section.mini-footer-wp .wp-svg-img {
+		width: 35%;
+	}
+}
+
+// Footer
+footer.footer {
+	background-color: #333230;
+	padding: 50px 0;
+
+	a {
+		color: rgb(196 196 196);
+		font-size: 14.5px;
+		transition: all 0.3s;
+
+		&:hover {
+			filter: brightness(220%);
+		}
+	}
+
+	.column__links-list {
+		line-height: 1.65;
+
+		li.blog-link {
+			margin-bottom: -5px;
+		}
+
+		li.blog-link:last-of-type {
+			margin-top: 30px;
+		}
+
+		li.blog-link + .blog-link-controls {
+			display: flex;
+			justify-content: space-between;
+			color: rgb(119 119 102);
+
+			a.MuiButton-text {
+				padding: 0px 6px 3px;
+			}
+		}
+	}
+
+	.copyright-footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.socials .socials-list {
+			display: flex;
+
+			li {
+				&:not(:first-of-type) {
+					margin-left: 20px;
+				}
+
+				a {
+					display: block;
+					width: 40px;
+					height: 40px;
+					border: 2px solid rgb(221 221 221);
+					border-radius: 50%;
+					text-align: center;
+					line-height: 42px;
+					cursor: pointer;
+					transition: all 0.34s;
+
+					svg {
+						width: 15px;
+						height: 15px;
+						transition: all 0.2s;
+						path {
+							fill: "rgb(221 221 221)";
+						}
+					}
+				}
+
+				&:hover a {
+					background: white;
+					line-height: 43.5px;
+
+					svg {
+						transform: scale(1.5);
+
+						path {
+							fill: #222;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// footer media queries
+@media (max-width: 540px) {
+	footer.footer .MuiContainer-root .MuiGrid-container > div {
+		max-width: 100%;
+		flex-basis: 100%;
+	}
+
+	footer.footer .copyright-footer {
+		display: block;
+
+		.copyright {
+			text-align: center;
+		}
+
+		.socials {
+			margin-top: 30px;
+
+			.socials-list {
+				justify-content: center;
+			}
+		}
+	}
+}
